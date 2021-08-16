@@ -1,0 +1,35 @@
+import random
+a=random.randint(1,1001)
+p=int(input("Donne un nombre: "))
+
+while True :
+    if a>p :
+        print("+")
+
+    elif a<p : 
+        print("-")
+        
+    else :
+        print("VICTOIRE!")
+        break
+    p=int(input("Donne un nombre: "))
+
+g=str(input("Restart ? (y/n) "))
+if g=="y" :
+    a=random.randint(1,1001)
+    p=int(input("Donne un nombre: "))
+
+    while True :
+        if a>p :
+            print("+")
+
+        elif a<p : 
+            print("-")
+        
+        else :
+            print("VICTOIRE!")
+            break
+        p=int(input("Donne un nombre: "))
+
+elif g=="n" :
+    print("AUREVOIR!")
